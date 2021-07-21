@@ -6,7 +6,7 @@
  *
 
  *
- * @authors     @ soldered.com
+ * @authors     Zvonimir Haramustek for Soldered.com
  ***************************************************/
 
 #include "easyC.h"
@@ -28,6 +28,7 @@ void loop()
 {
 }
 
+char lastEvent;
 
 void receiveEvent(int howMany)
 {
@@ -36,13 +37,25 @@ void receiveEvent(int howMany)
         char c = Wire.read();
     }
 
-    char c = Wire.read();
+    lastEvent = Wire.read();
 }
 
 void requestEvent()
 {
-    int n = 5;
+    int c = 0;
+    char a[2];
+    if (lastEvent == 0)
+    {
+        c = digitalRead(PA4);
+        a[0] = c;
+        a[1] = c;
+    }
+    else
+    {
+        c = analogRead(PA5);
+        a[0] = c >> 8;
+        a[1] = c & 0xFF;
+    }
 
-    char a[n];
-    Wire.write(a, n);
+    Wire.write(a, 2);
 }
