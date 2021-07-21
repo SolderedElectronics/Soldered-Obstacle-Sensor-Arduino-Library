@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_26',['initializeNative',['../class_sensor.html#adb537c76173019fddf84b2d89e6c6559',1,'Sensor::initializeNative()'],['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()']]]
+  ['digitalread_28',['digitalRead',['../class_obstacle___sensor.html#aca34c61b59ec3053430a90158301d711',1,'Obstacle_Sensor']]]
 ];

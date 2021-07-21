@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "easyC Hall Effect Sensor Soldered library", "index.html", [
+  [ "Obstacle sensor library", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -43,7 +43,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_generic-easy_c-_s_o_l_d_e_r_e_d_8cpp.html"
+"_obstacle-_sensor-_s_o_l_d_e_r_e_d_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

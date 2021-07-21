@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['sendaddress_29',['sendAddress',['../class_easy_c.html#a10aa7df19e8c7bf12cd720b662f317a3',1,'EasyC']]],
-  ['senddata_30',['sendData',['../class_easy_c.html#afe8aa014ae53cad3b0f3c42f59277195',1,'EasyC']]],
-  ['sensor_31',['Sensor',['../class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62',1,'Sensor']]]
+  ['initializenative_30',['initializeNative',['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()'],['../class_obstacle___sensor.html#ad7c1efea3f7752a827d1706031034eb7',1,'Obstacle_Sensor::initializeNative()']]]
 ];
