@@ -21,6 +21,7 @@ jobs:
       - run: sudo mv -f src gh-pages/src
       - run: sudo mv -f examples gh-pages/examples
       - run: sudo mv -f extras gh-pages/extras
+      - run: sudo cp README.md gh-pages/README.md
 
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.1.0
