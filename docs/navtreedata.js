@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "16x2 easyC LCD Library", "index.html", [
+  [ "Obstacle Sensor Library", "index.html", [
     [ "Obstacle Sensor Arduino library", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
