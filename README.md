@@ -5,9 +5,9 @@
 
 | ![Tux, the Linux mascot](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [Obstacle Sensor](www.solde.red/333004)                                                         |
+| [Obstacle Sensor](https://www.solde.red/333004)                                                         |
 ​
-Infrared sensor for detecting objects by bouncing light compliant with [easyC ecosystem](www.soldered.com/easyC). 
+Infrared sensor for detecting objects by bouncing light compliant with [easyC ecosystem](https://www.soldered.com/easyC). 
 ​
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)
