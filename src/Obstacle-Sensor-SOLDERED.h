@@ -9,8 +9,8 @@
  * @authors     Zvonimir Haramustek for Soldered.com
  ***************************************************/
 
-#ifndef __SENSOR__
-#define __SENSOR__
+#ifndef __OBSTACLE_SENSOR_SOLDERED__
+#define __OBSTACLE_SENSOR_SOLDERED__
 
 #include "Arduino.h"
 #include "libs/Generic-easyC/easyC.h"
