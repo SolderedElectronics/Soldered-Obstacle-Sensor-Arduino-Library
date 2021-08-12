@@ -11,6 +11,10 @@
 
 #include "easyC.h"
 
+
+namespace OBSTACLE_SOLDERED_LIBS
+{
+
 /**
  * @brief       Main constructor for easyC version
  *
@@ -113,3 +117,5 @@ int EasyC::sendData(const uint8_t *a, int n)
 
     return err = Wire.endTransmission();
 }
+
+} // namespace OBSTACLE_SOLDERED_LIBS
