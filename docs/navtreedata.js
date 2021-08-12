@@ -26,6 +26,9 @@ var NAVTREE =
 [
   [ "16x2 easyC LCD Library", "index.html", [
     [ "Obstacle Sensor Arduino library", "index.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
