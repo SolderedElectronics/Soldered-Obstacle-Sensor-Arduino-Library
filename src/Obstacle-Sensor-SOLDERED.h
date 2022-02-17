@@ -15,7 +15,7 @@
 #include "Arduino.h"
 #include "libs/Generic-easyC/easyC.hpp"
 
-class Obstacle_Sensor : public OBSTACLE_SOLDERED_LIBS::EasyC
+class Obstacle_Sensor : public EasyC
 {
   public:
     // Obstacle_Sensor(int _pin);
