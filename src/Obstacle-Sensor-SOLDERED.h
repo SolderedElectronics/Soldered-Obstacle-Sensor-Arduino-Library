@@ -13,7 +13,7 @@
 #define __OBSTACLE_SENSOR_SOLDERED__
 
 #include "Arduino.h"
-#include "libs/Generic-easyC/easyC.h"
+#include "libs/Generic-easyC/easyC.hpp"
 
 class Obstacle_Sensor : public OBSTACLE_SOLDERED_LIBS::EasyC
 {
