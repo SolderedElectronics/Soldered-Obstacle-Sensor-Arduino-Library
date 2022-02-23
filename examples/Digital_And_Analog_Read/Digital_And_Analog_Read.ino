@@ -16,7 +16,7 @@ Obstacle_Sensor obstacle_sensor;
 
 void setup()
 {
-    // Initialize the sensor
+    // Start serial communication with PC via UART
     Serial.begin(115200);
 
     // Initialize the sensor
