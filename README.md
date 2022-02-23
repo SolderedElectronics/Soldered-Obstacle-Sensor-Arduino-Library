@@ -5,7 +5,7 @@
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [NAZIV PROIZVODA](https://www.solde.red/333004)                                                         |
+| [Obstacle Sensor](https://www.solde.red/333004)                                                         |
 
 Board with the IR Obstacle Sensor compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
 
@@ -15,7 +15,7 @@ Board with the IR Obstacle Sensor compliant to [easyC ecosystem](https://www.sol
 - ***other*** - *keywords* file highlights function words in your IDE, *library.properties* enables implementation with Arduino Library Manager.
 
 ### Hardware design
-You can find hardware design for this board in NAZIV PROIZVODA hardware repository
+You can find hardware design for this board in Obstacle Sensor hardware repository
 
 ### Documentation
 
@@ -25,7 +25,7 @@ Access Arduino library documentation [here](https://e-radionicacom.github.io/Sol
 - Installing an Arduino library
 
 ### About Soldered
-![Soldered logo](https://raw.githubusercontent.com/e-radionicacom/Soldered-Generic-Arduino-Library/dev/extras/Logo%20horizontal-2.svg)
+![Soldered logo](https://raw.githubusercontent.com/e-radionicacom/Soldered-Obstacle-Sensor-Arduino-Library/dev/extras/Logo%20horizontal-2.svg)
 
 At Soldered, we design and manufacture a wide selection of electronic products to help you turn your ideas into acts and bring you one step closer to your final project. Our products are intented for makers and crafted in-house by our experienced team in Osijek, Croatia. We believe that sharing is a crucial element for improvement and innovation, and we work hard to stay connected with all our makers regardless of their skill or experience level. Therefore, all our products are open-source. Finally, we always have your back. If you face any problem concerning either your shopping experience or your electronics project, our team will help you deal with it, offering efficient customer service and cost-free technical support anytime. Some of those might be useful for you:
 
