@@ -22,7 +22,7 @@ class Obstacle_Sensor : public EasyC
 
     bool digitalRead();
     int analogRead();
-    bool setTreshold(uint16_t value);
+    void setTreshold(uint16_t value);
 
   protected:
     void initializeNative(){};
