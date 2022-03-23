@@ -21,6 +21,9 @@ void setup()
 
     // Initialize the sensor
     obstacle_sensor.begin();
+
+    // Set treshold for onboard LED
+    obstacle_sensor.setTreshold(255);
 }
 
 void loop()
@@ -34,6 +37,6 @@ void loop()
     // Read the analog sensor value
     Serial.print("Obstacle analog: ");
     Serial.println(obstacle_sensor.analogRead());
-
+    
     delay(1000);
 }

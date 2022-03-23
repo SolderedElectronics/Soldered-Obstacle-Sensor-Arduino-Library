@@ -13,6 +13,7 @@
 #include <Wire.h>
 
 int addr = DEFAULT_ADDRESS;
+uint16_t treshold = 127;
 
 void setup()
 {
@@ -22,40 +23,40 @@ void setup()
     Wire.begin(addr);
     Wire.onReceive(receiveEvent);
     Wire.onRequest(requestEvent);
+    pinMode(PA4, OUTPUT);
 }
 
 void loop()
 {
+  digitalWrite(PA4,(treshold < analogRead(PA5)) ? LOW : HIGH);
+  delay(1);
 }
 
-char lastEvent;
+uint8_t lastEvent, pLastEvent;
 
 void receiveEvent(int howMany)
 {
-    while (1 < Wire.available())
-    {
-        char c = Wire.read();
-    }
-
+    pLastEvent = lastEvent;
     lastEvent = Wire.read();
+    if(Wire.available() && lastEvent == 0x02)
+    {   
+        treshold = Wire.read() << 2;
+    }
+    if (pLastEvent == 0x02 && lastEvent > 0x04)
+    {
+        treshold = lastEvent << 2; 
+    }
 }
 
 void requestEvent()
-{
-    int c = 0;
-    char a[2];
-    if (lastEvent == 0)
+{   
+    if(lastEvent == 0)
     {
-        c = digitalRead(PA4);
-        a[0] = c;
-        a[1] = c;
-    }
-    else
-    {
+        int c = 0;
+        char a[2];
         c = analogRead(PA5);
         a[0] = c >> 8;
         a[1] = c & 0xFF;
-    }
-
-    Wire.write(a, 2);
+        Wire.write(a, 2);
+    } 
 }
