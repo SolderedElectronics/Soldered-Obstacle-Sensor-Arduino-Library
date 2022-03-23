@@ -59,9 +59,9 @@ int Obstacle_Sensor::analogRead()
 /**
  * @brief                   Sets treshold for turning on integrated L0 LED on breakout
  *
- * @return bool              Succes or not
+ *
  */
-bool Obstacle_Sensor::setTreshold(uint16_t value)
+void Obstacle_Sensor::setTreshold(uint16_t value)
 {
     char a[2];
     a[0] = 0x02;
