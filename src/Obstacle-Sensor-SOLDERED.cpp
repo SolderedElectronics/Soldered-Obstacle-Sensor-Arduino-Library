@@ -66,6 +66,6 @@ bool Obstacle_Sensor::setTreshold(uint16_t value)
     char a[2];
     a[0] = 0x02;
     a[1] = value >> 2;
-    sendData((const uint8_t*)a, 2 );
+    sendData((const uint8_t *)a, 2);
     treshold = value;
 }
