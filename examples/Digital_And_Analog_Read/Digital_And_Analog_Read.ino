@@ -22,8 +22,8 @@ void setup()
     // Initialize the sensor
     obstacle_sensor.begin();
 
-    // Set treshold for onboard LED
-    obstacle_sensor.setTreshold(255);
+    // Set treshold for onboard LED and digital read
+    obstacle_sensor.setTreshold(128);
 }
 
 void loop()
