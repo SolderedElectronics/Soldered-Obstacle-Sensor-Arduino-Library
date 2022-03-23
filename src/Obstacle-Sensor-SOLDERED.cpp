@@ -38,10 +38,8 @@
  */
 bool Obstacle_Sensor::digitalRead()
 {
-    char c[2];
-    readRegister(0, c, 2);
 
-    return c[0] == 1;
+    return analogRead() < treshold;
 }
 
 /**
@@ -52,7 +50,22 @@ bool Obstacle_Sensor::digitalRead()
 int Obstacle_Sensor::analogRead()
 {
     char c[2];
-    readRegister(1, c, 2);
+    readRegister(0, c, 2);
 
     return c[0] << 8 | c[1];
+}
+
+
+/**
+ * @brief                   Sets treshold for turning on integrated L0 LED on breakout
+ *
+ * @return bool              Succes or not
+ */
+bool Obstacle_Sensor::setTreshold(uint16_t value)
+{
+    char a[2];
+    a[0] = 0x02;
+    a[1] = value >> 2;
+    sendData((const uint8_t*)a, 2 );
+    treshold = value;
 }
