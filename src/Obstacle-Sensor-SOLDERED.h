@@ -23,12 +23,15 @@ class Obstacle_Sensor : public EasyC
     bool digitalRead();
     int analogRead();
     void setTreshold(uint16_t value);
+    uint16_t getTreshold(void);
+    bool available();
 
   protected:
     void initializeNative(){};
 
   private:
     int pin;
+    uint16_t val;
     uint16_t treshold = 127;
 };
 
