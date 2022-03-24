@@ -38,7 +38,6 @@
  */
 bool Obstacle_Sensor::digitalRead()
 {
-
     return analogRead() < treshold;
 }
 
@@ -49,10 +48,19 @@ bool Obstacle_Sensor::digitalRead()
  */
 int Obstacle_Sensor::analogRead()
 {
-    char c[2];
-    readRegister(0, c, 2);
+    if(available())
+    {
+        char c[2];
+        readRegister(0, c, 2);
 
-    return c[0] << 8 | c[1];
+        val = c[0] << 8 | c[1];
+        return val;
+    }
+    else 
+    {
+        return 0;
+    }
+
 }
 
 
@@ -63,9 +71,40 @@ int Obstacle_Sensor::analogRead()
  */
 void Obstacle_Sensor::setTreshold(uint16_t value)
 {
-    char a[2];
-    a[0] = 0x02;
-    a[1] = value >> 2;
-    sendData((const uint8_t *)a, 2);
-    treshold = value;
+    if(available())
+    {   
+        char a[2];
+        a[0] = 0x02;
+        if(value < 1023)
+        {
+            a[1] = value >> 2;
+        }
+        else
+        {
+            a[1] = 127 >> 2;
+        }
+        sendData((const uint8_t *)a, 2);
+        treshold = value;
+    }
+}
+
+/**
+ * @brief                   Sets treshold for turning on integrated L0 LED on breakout
+ *
+ *
+ */
+uint16_t Obstacle_Sensor::getTreshold()
+{
+    return treshold;
+}
+
+/**
+ * @brief                   Function which checks if I2C device is responding
+ *
+ * @return                  1 if device is responding, 0 if not
+ */
+bool Obstacle_Sensor::available()
+{
+    return !(sendAddress(0x00)); // checking if address is succesfully sent, if
+                                        // not device is not ready to communicate
 }

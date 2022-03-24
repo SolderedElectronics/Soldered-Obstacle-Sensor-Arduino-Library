@@ -28,15 +28,19 @@ void setup()
 
 void loop()
 {
+  if(obstacle_sensor.available())
+  {
     // Read the digital sensor value
     Serial.print("Obstacle digital: ");
     Serial.println(obstacle_sensor.digitalRead());
 
-    delay(1000);
-
     // Read the analog sensor value
     Serial.print("Obstacle analog: ");
     Serial.println(obstacle_sensor.analogRead());
-    
+  }
+  else
+  {
+    Serial.println("Communication error!");
+  }
     delay(1000);
 }
