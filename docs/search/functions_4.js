@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()'],['../class_obstacle___sensor.html#ad7c1efea3f7752a827d1706031034eb7',1,'Obstacle_Sensor::initializeNative()']]]
+  ['gettreshold_0',['getTreshold',['../class_obstacle___sensor.html#ab3256dde6be659e15d319366f720e538',1,'Obstacle_Sensor']]]
 ];

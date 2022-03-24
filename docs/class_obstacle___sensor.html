@@ -110,6 +110,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a915e9ee9aa4c6182737c873dd3ae9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle___sensor.html#a2a915e9ee9aa4c6182737c873dd3ae9e">setTreshold</a> (uint16_t value)</td></tr>
 <tr class="memdesc:a2a915e9ee9aa4c6182737c873dd3ae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets treshold for turning on integrated L0 LED on breakout.  <a href="class_obstacle___sensor.html#a2a915e9ee9aa4c6182737c873dd3ae9e">More...</a><br /></td></tr>
 <tr class="separator:a2a915e9ee9aa4c6182737c873dd3ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3256dde6be659e15d319366f720e538"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle___sensor.html#ab3256dde6be659e15d319366f720e538">getTreshold</a> (void)</td></tr>
+<tr class="memdesc:ab3256dde6be659e15d319366f720e538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets treshold for turning on integrated L0 LED on breakout.  <a href="class_obstacle___sensor.html#ab3256dde6be659e15d319366f720e538">More...</a><br /></td></tr>
+<tr class="separator:ab3256dde6be659e15d319366f720e538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade285339a89de458d8057cd58545c337"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle___sensor.html#ade285339a89de458d8057cd58545c337">available</a> ()</td></tr>
+<tr class="memdesc:ade285339a89de458d8057cd58545c337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function which checks if I2C device is responding.  <a href="class_obstacle___sensor.html#ade285339a89de458d8057cd58545c337">More...</a><br /></td></tr>
+<tr class="separator:ade285339a89de458d8057cd58545c337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_easy_c"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_easy_c')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_easy_c.html">EasyC</a></td></tr>
 <tr class="memitem:a2ea672a225a32eab52c2b20733fd26bd inherit pub_methods_class_easy_c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">EasyC</a> ()</td></tr>
 <tr class="memdesc:a2ea672a225a32eab52c2b20733fd26bd inherit pub_methods_class_easy_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main constructor for easyC version.  <a href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">More...</a><br /></td></tr>
@@ -144,6 +150,8 @@ Protected Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab011bb6c8c7dbe97850c70e5b287b976"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle___sensor.html#ab011bb6c8c7dbe97850c70e5b287b976">pin</a></td></tr>
 <tr class="separator:ab011bb6c8c7dbe97850c70e5b287b976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace21dfc0754f6c812d1014876dc7d2aa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle___sensor.html#ace21dfc0754f6c812d1014876dc7d2aa">val</a></td></tr>
+<tr class="separator:ace21dfc0754f6c812d1014876dc7d2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6203e33ac2f3a015e1e61441fab1a00"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle___sensor.html#aa6203e33ac2f3a015e1e61441fab1a00">treshold</a> = 127</td></tr>
 <tr class="separator:aa6203e33ac2f3a015e1e61441fab1a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -182,6 +190,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ade285339a89de458d8057cd58545c337" name="ade285339a89de458d8057cd58545c337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade285339a89de458d8057cd58545c337">&#9670;&nbsp;</a></span>available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Obstacle_Sensor::available </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function which checks if I2C device is responding. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 if device is responding, 0 if not </dd></dl>
+
+</div>
+</div>
 <a id="aca34c61b59ec3053430a90158301d711" name="aca34c61b59ec3053430a90158301d711"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca34c61b59ec3053430a90158301d711">&#9670;&nbsp;</a></span>digitalRead()</h2>
 
@@ -207,6 +235,26 @@ Additional Inherited Members</h2></td></tr>
 <p>Overloaded function for virtual in base class to initialize sensor specific.</p>
 <p >Returns digital value of sensor.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool Digital value of sensor. </dd></dl>
+
+</div>
+</div>
+<a id="ab3256dde6be659e15d319366f720e538" name="ab3256dde6be659e15d319366f720e538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3256dde6be659e15d319366f720e538">&#9670;&nbsp;</a></span>getTreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Obstacle_Sensor::getTreshold </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets treshold for turning on integrated L0 LED on breakout. </p>
 
 </div>
 </div>
@@ -302,6 +350,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ace21dfc0754f6c812d1014876dc7d2aa" name="ace21dfc0754f6c812d1014876dc7d2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace21dfc0754f6c812d1014876dc7d2aa">&#9670;&nbsp;</a></span>val</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Obstacle_Sensor::val</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_obstacle-_sensor-_s_o_l_d_e_r_e_d_8h_source.html">Obstacle-Sensor-SOLDERED.h</a></li>
 <li><a class="el" href="_obstacle-_sensor-_s_o_l_d_e_r_e_d_8cpp.html">Obstacle-Sensor-SOLDERED.cpp</a></li>
@@ -314,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_obstacle___sensor.html">Obstacle_Sensor</a></li>
         <li class="footer">
-            Generated on Wed Mar 23 2022 10:30:23 for Obstacle sensor Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Mar 24 2022 13:10:53 for Obstacle sensor Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.3.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
