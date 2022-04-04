@@ -48,7 +48,7 @@ bool Obstacle_Sensor::digitalRead()
  */
 int Obstacle_Sensor::analogRead()
 {
-    if(available())
+    if (available())
     {
         char c[2];
         readRegister(0, c, 2);
@@ -56,11 +56,10 @@ int Obstacle_Sensor::analogRead()
         val = c[0] << 8 | c[1];
         return val;
     }
-    else 
+    else
     {
         return 0;
     }
-
 }
 
 
@@ -73,17 +72,19 @@ void Obstacle_Sensor::setTreshold(uint16_t value)
 {
     if(available())
     {   
-        char a[2];
+        char a[3];
         a[0] = 0x02;
-        if(value < 1023)
+        if(value < 1023 && value > 0)
         {
-            a[1] = value >> 2;
+            a[1] = (value  & 0xFF00) >> 8;
+            a[2] = value & 0xFF;
         }
         else
         {
-            a[1] = 127 >> 2;
+            a[1] = 0;
+            a[2] = 127;
         }
-        sendData((const uint8_t *)a, 2);
+        sendData((const uint8_t *)a, 3);
         treshold = value;
     }
 }
@@ -106,5 +107,5 @@ uint16_t Obstacle_Sensor::getTreshold()
 bool Obstacle_Sensor::available()
 {
     return !(sendAddress(0x00)); // checking if address is succesfully sent, if
-                                        // not device is not ready to communicate
+                                 // not device is not ready to communicate
 }
