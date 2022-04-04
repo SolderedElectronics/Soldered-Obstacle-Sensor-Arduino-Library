@@ -70,13 +70,13 @@ int Obstacle_Sensor::analogRead()
  */
 void Obstacle_Sensor::setTreshold(uint16_t value)
 {
-    if(available())
-    {   
+    if (available())
+    {
         char a[3];
         a[0] = 0x02;
-        if(value < 1023 && value > 0)
+        if (value < 1023 && value > 0)
         {
-            a[1] = (value  & 0xFF00) >> 8;
+            a[1] = (value & 0xFF00) >> 8;
             a[2] = value & 0xFF;
         }
         else
