@@ -18,6 +18,7 @@ bool state = 0, prev_state = 0;
 
 void setup()
 {
+  
     initDefault();
     addr = getI2CAddress();
 
@@ -25,6 +26,7 @@ void setup()
     Wire.onReceive(receiveEvent);
     Wire.onRequest(requestEvent);
     pinMode(PA4, OUTPUT);
+    Serial.begin(115200);
 }
 
 void loop()
@@ -43,13 +45,18 @@ uint8_t lastEvent, pLastEvent;
 
 void receiveEvent(int howMany)
 {
+    Serial.print("Avail is: ");
+    Serial.println(Wire.available());
     while(Wire.available())
     {
       if(Wire.peek() == 0x02)
       {
           digitalWrite(PA4,HIGH);
+          Serial.println(Wire.peek());
           lastEvent = Wire.read();
-          treshold = Wire.read() << 2;
+          treshold = 0x0000;
+          treshold |= Wire.read() << 8;
+          treshold |= Wire.read();
       }
       else
           lastEvent = Wire.read();
