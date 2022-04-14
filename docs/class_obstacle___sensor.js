@@ -1,6 +1,6 @@
 var class_obstacle___sensor =
 [
-    [ "analogRead", "class_obstacle___sensor.html#a503e4bf3c1d8906b7ad2b20cde79080d", null ],
+    [ "analogRead", "class_obstacle___sensor.html#adf371d6a4d1e321bccb69ec2eacc8a08", null ],
     [ "available", "class_obstacle___sensor.html#ade285339a89de458d8057cd58545c337", null ],
     [ "digitalRead", "class_obstacle___sensor.html#aca34c61b59ec3053430a90158301d711", null ],
     [ "getTreshold", "class_obstacle___sensor.html#ab3256dde6be659e15d319366f720e538", null ],
