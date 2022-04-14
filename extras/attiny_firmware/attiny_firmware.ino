@@ -21,7 +21,6 @@ void setup()
   
     initDefault();
     addr = getI2CAddress();
-    Serial.begin(115200);
     Wire.begin(addr);
     Wire.onReceive(receiveEvent);
     Wire.onRequest(requestEvent);
