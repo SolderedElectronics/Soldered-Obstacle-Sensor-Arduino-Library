@@ -1,8 +1,8 @@
 /**
  **************************************************
  *
- * @file        Template for attiny_firmware
- * @brief       Fill in sensor specific code.
+ * @file        attiny_firmware.ino
+ * @brief       ATTINY firmware for obstacle detector
  *
 
  *
@@ -21,12 +21,11 @@ void setup()
   
     initDefault();
     addr = getI2CAddress();
-
+    Serial.begin(115200);
     Wire.begin(addr);
     Wire.onReceive(receiveEvent);
     Wire.onRequest(requestEvent);
     pinMode(PA4, OUTPUT);
-    Serial.begin(115200);
 }
 
 void loop()
@@ -38,21 +37,18 @@ void loop()
   {
       digitalWrite(PA4,state);
   }
-  delay(1);
+  delay(10);
 }
 
 uint8_t lastEvent, pLastEvent;
 
 void receiveEvent(int howMany)
 {
-    Serial.print("Avail is: ");
-    Serial.println(Wire.available());
     while(Wire.available())
     {
       if(Wire.peek() == 0x02)
       {
           digitalWrite(PA4,HIGH);
-          Serial.println(Wire.peek());
           lastEvent = Wire.read();
           treshold = 0x0000;
           treshold |= Wire.read() << 8;
@@ -68,8 +64,8 @@ void requestEvent()
     if(lastEvent == 0)
     {
         char a[2];
-        a[0] = reading >> 8;
-        a[1] = reading  & 0xFF;
+        a[1] = reading & 0xFF;
+        a[0] = ((reading & 0xFF00) >> 8) & 0xFF;
         Wire.write(a, 2);
     } 
 }

@@ -21,7 +21,7 @@ class Obstacle_Sensor : public EasyC
     // Obstacle_Sensor(int _pin);
 
     bool digitalRead();
-    int analogRead();
+    uint16_t analogRead();
     void setTreshold(uint16_t value);
     uint16_t getTreshold(void);
     bool available();
