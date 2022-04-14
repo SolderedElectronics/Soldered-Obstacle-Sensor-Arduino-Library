@@ -87,8 +87,6 @@ void Obstacle_Sensor::setTreshold(uint16_t value)
             treshold = 127;
         }
         sendData((const uint8_t *)a, 3);
-
-
     }
 }
 
