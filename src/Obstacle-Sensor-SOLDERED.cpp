@@ -46,14 +46,14 @@ bool Obstacle_Sensor::digitalRead()
  *
  * @return int              Analog value of sensor.
  */
-int Obstacle_Sensor::analogRead()
+uint16_t Obstacle_Sensor::analogRead()
 {
     if (available())
     {
         char c[2];
         readRegister(0, c, 2);
 
-        val = c[0] << 8 | c[1];
+        val = ((c[0] << 8) & 0xFF00) | (c[1] & 0xFF);
         return val;
     }
     else
@@ -70,22 +70,25 @@ int Obstacle_Sensor::analogRead()
  */
 void Obstacle_Sensor::setTreshold(uint16_t value)
 {
-    if(available())
-    {   
+    if (available())
+    {
         char a[3];
         a[0] = 0x02;
-        if(value < 1023 && value > 0)
+        if (value < 1023 && value > 0)
         {
-            a[1] = (value  & 0xFF00) >> 8;
+            a[1] = (value & 0xFF00) >> 8;
             a[2] = value & 0xFF;
+            treshold = value;
         }
         else
         {
             a[1] = 0;
             a[2] = 127;
+            treshold = 127;
         }
         sendData((const uint8_t *)a, 3);
-        treshold = value;
+
+
     }
 }
 
