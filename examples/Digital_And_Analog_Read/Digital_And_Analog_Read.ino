@@ -14,6 +14,12 @@
 // Declare the sensor object
 Obstacle_Sensor obstacle_sensor;
 
+// Wiring diagram is not needed here, you just
+// plug easyC cable in microcontroller and breakout
+// board and you are ready to upload this sketch
+// You can find more info about easyC on this link
+// https://soldered.com/easyC
+
 void setup()
 {
     // Start serial communication with PC via UART
