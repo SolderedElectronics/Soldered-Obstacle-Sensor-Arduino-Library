@@ -1,4 +1,4 @@
-# NAZIV PROIZVODA Arduino library
+# Obstacle sensor Arduino library
 
 [![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml)
 
@@ -6,7 +6,15 @@
 | :---------------------------------------------------------------------------------------------: |
 | [Obstacle sensor with easyC](https://www.solde.red/333004)                                                            |
 
-OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC). 
+| ![Obstacle sensor TCRT5000 breakout](https://github.com/SolderedElectronics/Obstacle-sensor-TCRT5000-breakout-hardware-design/blob/main/OUTPUTS/V1.1.1/333012.jpg) |
+| :---------------------------------------------------------------------------------------------: |
+| [Obstacle sensor TCRT5000 breakout](https://www.solde.red/333012)        
+
+Obstacle sensor, based on TCRT5000, uses infrared diode and photo-receiver to detect obstacle in front of it - emitted light just reflects back to the sensor. Onboard, you'll find voltage comparator, so just by adjusting the potentiometer, the board gives digital output. There's LED DO onboard to show the current digital output status. There's analog output as well, in case you need it. Sensor works particularly well for line-following purposes on small robots.
+
+- Sensor: TCRT5000
+- Comparator: LM303
+- Dimensions: 22 x 22 mm
 
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)
@@ -14,7 +22,9 @@ OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 - ***other*** - *keywords* file highlights function words in your IDE, *library.properties* enables implementation with Arduino Library Manager.
 
 ### Hardware design
-You can find hardware design for this board in *Obstacle sensor with easyC* hardware repository.
+You can find hardware design for this board in [*Obstacle sensor with easyC*](https://github.com/SolderedElectronics/Obstacle-sensor-with-easyC-hardware-design) hardware repository.
+
+You can find hardware design for this board in [*Obstacle sensor TCRT5000 breakout*](https://github.com/SolderedElectronics/Obstacle-sensor-TCRT5000-breakout-hardware-design) hardware repository.
 
 ### Documentation
 
