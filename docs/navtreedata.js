@@ -25,9 +25,7 @@
 var NAVTREE =
 [
   [ "Obstacle sensor Library", "index.html", [
-    [ "Obstacle sensor Arduino library", "index.html", [
-      [ "Have fun!", "index.html#autotoc_md8", null ]
-    ] ],
+    [ "Obstacle sensor Arduino library", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
