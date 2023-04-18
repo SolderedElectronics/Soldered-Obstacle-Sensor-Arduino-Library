@@ -1,7 +1,7 @@
 # Obstacle sensor Arduino library
 
 [![Make docs and publish to GitHub Pages](https://github.com/SolderedElectronics/Soldered-Obstacle-Sensor-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Obstacle-Sensor-Arduino-Library/actions/workflows/make_docs.yml)
-[![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Generic-Arduino-Library/actions/workflows/arduino_lint.yml)
+[![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-Obstacle-Sensor-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Obstacle-Sensor-Arduino-Library/actions/workflows/arduino_lint.yml)
 
 
 | ![Obstacle sensor with easyC](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
