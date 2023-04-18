@@ -34,7 +34,7 @@ You can find hardware design for this board in [_Obstacle sensor TCRT5000 breako
 
 Access Arduino library documentation [here](https://SolderedElectronics.github.io/Soldered-Obstacle-Sensor-Arduino-Library/).
 
-- Tutorial for using the NAZIV PROIZVODA board
+- Tutorial for using the Obstacle sensor board
 - Installing an Arduino library
 
 ### Board compatibility
