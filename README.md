@@ -6,11 +6,11 @@
 
 | ![Obstacle sensor with easyC](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :--------------------------------------------------------------------------------------------------: |
-|                      [Obstacle sensor with easyC](https://www.solde.red/333004)                      |
+|                      [Obstacle sensor with easyC](https://solde.red/333004)                      |
 
 | ![Obstacle sensor TCRT5000 breakout](https://github.com/SolderedElectronics/Obstacle-sensor-TCRT5000-breakout-hardware-design/blob/main/OUTPUTS/V1.1.1/333012.jpg) |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [Obstacle sensor TCRT5000 breakout](https://www.solde.red/333012)                                                                                                  |
+| [Obstacle sensor TCRT5000 breakout](https://solde.red/333012)                                                                                                  |
 
 Obstacle sensor, based on TCRT5000, uses infrared diode and photo-receiver to detect obstacle in front of it - emitted light just reflects back to the sensor. Onboard, you'll find voltage comparator, so just by adjusting the potentiometer, the board gives digital output. There's LED DO onboard to show the current digital output status. There's analog output as well, in case you need it. Sensor works particularly well for line-following purposes on small robots.
 
