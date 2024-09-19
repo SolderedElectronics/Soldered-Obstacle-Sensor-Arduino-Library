@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]]
+  ['gettreshold_0',['getTreshold',['../class_obstacle___sensor.html#ab3256dde6be659e15d319366f720e538',1,'Obstacle_Sensor']]]
 ];
