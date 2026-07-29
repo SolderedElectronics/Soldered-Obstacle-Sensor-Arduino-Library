@@ -4,7 +4,7 @@
 [![Arduino Library Manager Compatibility](https://github.com/SolderedElectronics/Soldered-Obstacle-Sensor-Arduino-Library/actions/workflows/arduino_lint.yml/badge.svg?branch=dev)](https://github.com/SolderedElectronics/Soldered-Obstacle-Sensor-Arduino-Library/actions/workflows/arduino_lint.yml)
 
 
-| ![Obstacle sensor with easyC](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| ![Obstacle sensor with easyC](https://docs.soldered.com/assets/images/333004-53aa4f54db21fbf4423a42f4cb911e00.jpg) |
 | :--------------------------------------------------------------------------------------------------: |
 |                      [Obstacle sensor with easyC](https://solde.red/333004)                      |
 
